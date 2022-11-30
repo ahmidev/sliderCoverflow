@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Tuto.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Slider coverflow responsive</h1>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="photos/photo01.jpeg">
+            </div>
+              <div class="swiper-slide">
+                <img src="photos/photo02.jpeg">
+            </div>
+              <div class="swiper-slide">
+                <img src="photos/photo03.jpeg">
+            </div>
+              <div class="swiper-slide">
+                <img src="photos/photo04.jpeg">
+            </div>
+                <div class="swiper-slide">
+                  <img src="photos/photo05.jpeg">
+              </div>
+              <div class="swiper-slide">
+                <img src="photos/photo06.jpeg">
+            </div>
+            <div class="swiper-slide">
+              <img src="photos/photo07.jpeg">
+          </div>
+          <div class="swiper-slide">
+            <img src="photos/photo08.jpeg">
+          </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+
+        /* coverflow swiper js */
+
+        const swiper = new Swiper('.swiper', {
+          effect: "coverflow",
+          speed: 750,
+          loop: true,
+          slidesPerView: 'auto',
+          centeredSlides : true,
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+            autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+          },
+        });
+
+        /* 
+
+        coverflowEffect: {
+                rotate: 100,
+                stretch: 100,
+                depth: 250,
+                modifier: 1,
+                slideShadows: true,
+            },
+
+        */
+
+    </script>
+
+
+</body>
+</html>

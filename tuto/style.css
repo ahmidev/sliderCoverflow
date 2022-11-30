@@ -1,0 +1,82 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight:600;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+}
+
+h1 {
+    text-align:center;
+    margin:0 0 1.5em 0;
+    padding:0;
+    font-size:2em;
+}
+
+/* --- TUTO --- */
+
+.swiper {
+    width:1024px;
+    max-width:100%;
+    margin:0 auto;
+}
+
+.swiper:before {
+    content:'';
+    position:absolute;
+    z-index:5;
+    top:0;
+    left:0;
+    background:linear-gradient(90deg, #fff, rgba(255,255,255,0));
+    width:20%;
+    height:100%;
+    pointer-events: none;
+}
+
+.swiper:after {
+    content:'';
+    position:absolute;
+    z-index:5;
+    top:0;
+    right:0;
+    background:linear-gradient(90deg,rgba(255,255,255,0), #fff);
+    width:20%;
+    height:100%;
+    pointer-events: none;
+}
+
+.swiper-slide {
+    width:200px;
+    height:250px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    position:static;
+    margin:15px 0 0 0;
+}
+
+.swiper-pagination-bullet-active {
+    background:#000;
+}
+
+/*
+
+@media(max-width:767px) {
+    .swiper:before, .swiper:after {
+        display:none;
+    }
+}
+
+*/
